@@ -35,7 +35,7 @@ type IssueV2 struct {
 	ChainID byte            `json:"-"`
 	ID      *crypto.Digest  `json:"id,omitempty"`
 	Proofs  *ProofsV1       `json:"proofs,omitempty"`
-	Script  Script          `json:"script"`
+	Script  Script          `json:"script,omitempty"`
 	Issue
 }
 
